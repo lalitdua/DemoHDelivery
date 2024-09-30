@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerTableViewCell" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModule="HaatDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="329"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="329"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EY6-aL-YwW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="329"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-PH-EPT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="329"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="bx0-ji-3t9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HZS-dn-IAI">
+                                <rect key="frame" x="129.66666666666666" y="283" width="116" height="26"/>
+                                <color key="pageIndicatorTintColor" name="grayTextColor"/>
+                                <color key="currentPageIndicatorTintColor" name="themeColor"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gAy-PH-EPT" firstAttribute="leading" secondItem="EY6-aL-YwW" secondAttribute="leading" id="Nwe-hv-vfF"/>
+                            <constraint firstAttribute="bottom" secondItem="gAy-PH-EPT" secondAttribute="bottom" id="Ot8-y6-Xrj"/>
+                            <constraint firstAttribute="bottom" secondItem="HZS-dn-IAI" secondAttribute="bottom" constant="20" id="TT7-rd-A4H"/>
+                            <constraint firstAttribute="trailing" secondItem="gAy-PH-EPT" secondAttribute="trailing" id="eDS-TD-TFq"/>
+                            <constraint firstItem="HZS-dn-IAI" firstAttribute="centerX" secondItem="EY6-aL-YwW" secondAttribute="centerX" id="rtb-aq-btg"/>
+                            <constraint firstItem="gAy-PH-EPT" firstAttribute="top" secondItem="EY6-aL-YwW" secondAttribute="top" id="zxl-w0-NQ9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EY6-aL-YwW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QlV-fe-cND"/>
+                    <constraint firstAttribute="bottom" secondItem="EY6-aL-YwW" secondAttribute="bottom" id="feo-cT-YA8"/>
+                    <constraint firstAttribute="trailing" secondItem="EY6-aL-YwW" secondAttribute="trailing" id="p2P-Cn-UqB"/>
+                    <constraint firstItem="EY6-aL-YwW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yoi-po-E3C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionViews" destination="gAy-PH-EPT" id="Prt-wy-WBn"/>
+                <outlet property="pageControl" destination="HZS-dn-IAI" id="QkI-SM-O8E"/>
+            </connections>
+            <point key="canvasLocation" x="-163" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="grayTextColor">
+            <color red="0.62000000476837158" green="0.62000000476837158" blue="0.62000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeColor">
+            <color red="0.74099999666213989" green="0.0080000003799796104" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

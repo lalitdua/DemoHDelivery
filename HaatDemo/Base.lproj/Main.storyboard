@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ojk-RO-wEh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HaatDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="4"/>
+        </scene>
+        <!--Main Tab BarVC-->
+        <scene sceneID="nVo-sR-EL5">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarVC" id="Ojk-RO-wEh" customClass="MainTabBarVC" customModule="HaatDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0ds-CI-fsO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="themeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aAK-sE-Ucc" kind="relationship" relationship="viewControllers" id="uiU-kr-Bki"/>
+                        <segue destination="W2k-6Y-Zh1" kind="relationship" relationship="viewControllers" id="TvG-NO-BZd"/>
+                        <segue destination="SBy-Ab-YYw" kind="relationship" relationship="viewControllers" id="jtr-EE-B3e"/>
+                        <segue destination="sHX-IU-fCS" kind="relationship" relationship="viewControllers" id="vmN-A4-2iD"/>
+                        <segue destination="eaI-aj-hnr" kind="relationship" relationship="viewControllers" id="TDG-87-JNs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZM-6N-bxy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="836"/>
+        </scene>
+        <!--RestaurantsVC-->
+        <scene sceneID="cWz-GE-C6E">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RestaurantsVC" storyboardName="Restaurants" referencedIdentifier="RestaurantsVC" id="aAK-sE-Ucc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="G7p-kh-fhF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3M-WF-Iz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1162" y="1437"/>
+        </scene>
+        <!--MarketsVC-->
+        <scene sceneID="lX5-Xj-LTt">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MarketsVC" storyboardName="Market" referencedIdentifier="MarketsVC" id="W2k-6Y-Zh1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="euy-FU-sMV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0f-d5-Yih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-689" y="1437"/>
+        </scene>
+        <!--CartVC-->
+        <scene sceneID="dLs-Ne-jEM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CartVC" storyboardName="Cart" referencedIdentifier="CartVC" id="SBy-Ab-YYw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UrY-k1-liE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGO-MQ-sdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-211" y="1437"/>
+        </scene>
+        <!--OrdersVC-->
+        <scene sceneID="ksT-dV-9om">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OrdersVC" storyboardName="Orders" referencedIdentifier="OrdersVC" id="gBR-3j-jjk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8ij-EB-lpA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gm3-KA-VUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211" y="1689"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="sGn-YD-03M">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProfileVC" storyboardName="Profile" referencedIdentifier="ProfileVC" id="eaI-aj-hnr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="1ec-ee-xnD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4O-Uw-NXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817.5572519083969" y="1436.6197183098593"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="jgr-Pg-QLh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sHX-IU-fCS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="g2N-J5-RJf"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7NA-bQ-DG2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gBR-3j-jjk" kind="relationship" relationship="rootViewController" id="7Vt-bh-1LE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOh-gU-uKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="1690"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="themeColor">
+            <color red="0.74099999666213989" green="0.0080000003799796104" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

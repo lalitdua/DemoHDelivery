@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.otf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagsCollectionViewCell" id="gTV-IL-0wX" customClass="TagsCollectionViewCell" customModule="HaatDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLj-Hr-73D">
+                        <rect key="frame" x="0.0" y="0.0" width="116" height="116"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-Il-4hQ">
+                                <rect key="frame" x="14" y="0.0" width="88" height="88"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BREAKFAST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDW-ep-CUv">
+                                <rect key="frame" x="5" y="93" width="106" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oRg-Il-4hQ" secondAttribute="trailing" constant="14" id="6le-oM-a8G"/>
+                            <constraint firstItem="LDW-ep-CUv" firstAttribute="leading" secondItem="eLj-Hr-73D" secondAttribute="leading" constant="5" id="BbP-Zj-WEM"/>
+                            <constraint firstItem="oRg-Il-4hQ" firstAttribute="top" secondItem="eLj-Hr-73D" secondAttribute="top" id="EZc-gJ-rob"/>
+                            <constraint firstItem="oRg-Il-4hQ" firstAttribute="leading" secondItem="eLj-Hr-73D" secondAttribute="leading" constant="14" id="Fdm-vn-RAQ"/>
+                            <constraint firstItem="LDW-ep-CUv" firstAttribute="top" secondItem="oRg-Il-4hQ" secondAttribute="bottom" constant="5" id="Ig8-2Z-pNr"/>
+                            <constraint firstAttribute="bottom" secondItem="LDW-ep-CUv" secondAttribute="bottom" constant="5" id="Yxq-Wt-sAF"/>
+                            <constraint firstAttribute="trailing" secondItem="LDW-ep-CUv" secondAttribute="trailing" constant="5" id="fMM-og-SRA"/>
+                            <constraint firstItem="oRg-Il-4hQ" firstAttribute="centerX" secondItem="eLj-Hr-73D" secondAttribute="centerX" id="lRc-xq-Ybj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="eLj-Hr-73D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Otw-LN-aiu"/>
+                <constraint firstAttribute="bottom" secondItem="eLj-Hr-73D" secondAttribute="bottom" id="VJR-fs-9wB"/>
+                <constraint firstItem="eLj-Hr-73D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cev-Hz-MWR"/>
+                <constraint firstAttribute="trailing" secondItem="eLj-Hr-73D" secondAttribute="trailing" id="eKd-6w-Kts"/>
+            </constraints>
+            <connections>
+                <outlet property="imgTags" destination="oRg-Il-4hQ" id="vcx-ES-H82"/>
+                <outlet property="lblTags" destination="LDW-ep-CUv" id="O3n-d9-orb"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
